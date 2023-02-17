@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
 import android.widget.Toast;
+import android.util.Log;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onStart Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onCreate");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
     @Override
     protected void onStart() {
@@ -35,7 +40,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onStart Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onStart");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
     @Override
     protected void onPause() {
@@ -45,7 +54,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onPause Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onPause");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
     @Override
     protected void onStop() {
@@ -55,7 +68,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onStop Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onStop");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
     @Override
     protected void onDestroy() {
@@ -65,7 +82,11 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onDestroy Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onDestroy");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
     @Override
     protected void onRestart() {
@@ -75,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = "onRestart Toast!";
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
+        Log.i(TAG, "onRestart");
+        Log.d(TAG, "Debug");
+        Log.w(TAG, "Warning");
+        Log.v(TAG, "Verbose");
+        Log.wtf(TAG, "Verbose");
     }
-    }
+}
